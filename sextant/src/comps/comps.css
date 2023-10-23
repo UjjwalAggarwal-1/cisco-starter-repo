@@ -10,13 +10,15 @@
     transition: 0.3s;
     border-radius: 5px;
     margin: 12px;
-    width: 45%;
+    min-width: 44%;
     border: #fff421 solid 2px;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .card:hover {
-    scale: 1.2;
-    padding: 0 16px 0 16px;
+    scale: 1.05;
+    padding: 5px 16px 5px 16px;
     margin: 15px 0 19px 0;
     border: solid 4px #fff421;
 }
@@ -24,10 +26,10 @@
 .card .container {
     padding: 2px 16px;
 }
+
 .card .container p{
     color: #fff421;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    overflow:hidden;
 }
 
 .flex-container{
