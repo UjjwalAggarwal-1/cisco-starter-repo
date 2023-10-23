@@ -3,7 +3,7 @@ import './comps.css';
 function Banner() {
     return (
       <div className="Banner">
-        <h2>Wohooo</h2>
+        <h1>Sextant DashBoard</h1>
       </div>
     );
   }
