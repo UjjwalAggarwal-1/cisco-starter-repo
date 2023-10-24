@@ -1,15 +1,19 @@
-import './comps.css';
+import styles from './comps.module.css';
 import Card from './card';
 
-function Container(
-    IPv4, IPv6
-){
+function Container({
+    IPv4, IPv6, ZipCode, Latitude, Longitude, City, Region
+}){
 
     return (
-        <div className="flex-container">
-            <Card title="IPv4" desc = {IPv4} />
+        <div className={styles["flex-container"]}>
+            <Card title="IPv4" desc={IPv4} />
             <Card title="IPv6" desc = {IPv6} />
-            <Card title="Test" desc = "TeEEEESSTasdfasdf" />
+            <Card title="ZipCode" desc = {ZipCode} />
+            <Card title="Latitude" desc = {Latitude} />
+            <Card title="Longitude" desc = {Longitude} />
+            <Card title="City" desc = {City} />
+            <Card title="Region" desc = {Region} />
             <Card title="Test" desc = "TeEEEESST" />
             <Card title="Test" desc = "TeEEEESST" />
             <Card title="Testestsetset" desc = "TeEEEESSTTeEEEESSTTeEEEESSTTeEEEESSTTeEEEESSTTeEEEESSTTeEEEESSTTeEEEESSTTeEEEESSTTeEEEESSTTeEEEESSTTeEEEESSTTeEEEESST" />

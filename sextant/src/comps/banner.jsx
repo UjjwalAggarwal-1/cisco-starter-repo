@@ -1,8 +1,8 @@
-import './comps.css';
+import styles from './comps.module.css';
 
 function Banner() {
     return (
-      <div className="Banner">
+      <div className={styles.Banner}>
         <h1>Sextant DashBoard</h1>
       </div>
     );
