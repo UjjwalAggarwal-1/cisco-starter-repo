@@ -3,6 +3,8 @@ import './App.css';
 import Banner from './comps/banner';
 import Container from './comps/container';
 
+let alreadyFetchedData = false; //for the double render, due to reacts dev mode //will be lost in each render, (even refresh)
+
 
 function App() {
   const [IPv4, setIPv4] = useState("IPv4");
@@ -11,9 +13,7 @@ function App() {
   const [Latitude, setLatitude] = useState("Latitude");
   const [Longitude, setLongitude] = useState("Longitude");
   const [City, setCity] = useState("City");
-  const [Region, setRegion] = useState("Region");
-  
-  let alreadyFetchedData = false; //for the double render, due to reacts dev mode //will be lost in each render, (even refresh)
+  const [Region, setRegion] = useState("Region");  
 
   useEffect(() => {
     if (alreadyFetchedData) {

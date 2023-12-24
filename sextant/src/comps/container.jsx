@@ -1,13 +1,15 @@
 import styles from './comps.module.css';
 import Card from './card';
+import WSCC from './websocketclientcard';
 
 function Container({
-    IPv4, IPv6, ZipCode, Latitude, Longitude, City, Region
+    IPv4, IPv6, ZipCode, Latitude, Longitude, City, Region, Latency
 }){
 
     return (
         <div className={styles["flex-container"]}>
             <Card title="IPv4" desc={IPv4} />
+            <WSCC />
             <Card title="IPv6" desc = {IPv6} />
             <Card title="ZipCode" desc = {ZipCode} />
             <Card title="Latitude" desc = {Latitude} />

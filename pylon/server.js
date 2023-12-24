@@ -6,9 +6,11 @@ server.listen(55455);
 const wsServer = new webSocketServer({ httpServer: server });
 
 wsServer.on('request', function (request) {
-    console.log('establishing a new connection with client');
+    console.log('establishing a new connection with client', new Date());
+
     var connection = request.accept(null, request.origin);
     setInterval(() => {
         connection.sendUTF(new Date().getTime())
     }, 100);
+    
 });
