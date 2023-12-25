@@ -19,14 +19,14 @@ function App() {
     if (alreadyFetchedData) {
       return;
     }
-    fetch("https://api.whatismyip.com/ip.php?key=asfdasdf")
+    fetch("https://api.whatismyip.com/ip.php?key=2dfb27bc67b24c1f66551b2f355088cf")
       .then(async response => await response.text())
       .then(data => {
         setIPv4(data);
         setIPv6(data);
         return data;
       }).then((data) => {
-    fetch("http://api.ipstack.com/"+data+"?access_key=asdfasf")
+    fetch("http://api.ipstack.com/"+data+"?access_key=948ad200b784f65a4c6b43e0bf3c8fc0")
       .then(async response => await response.json())
       .then(data => {
         setZipCode(data.zip);
